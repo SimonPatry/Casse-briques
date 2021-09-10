@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    background-color:green;
+}
+h1{
+    color:white;
+    text-align:center;
+    font-size:5em;
+    margin:1em auto;
+}
+h2{
+    font-size: 4em;
+}
+main{
+    width:100%;
+    margin:2em auto;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+/* design of the ball */
+
+#board{
+    position:relative;
+    background-color:black;
+    display:flex;
+    margin:auto;
+    justify-content:center;
+}
+#options{
+    width:80%;
+    margin:auto;
+}
+#menu{
+    color:white;
+    text-align:center;
+    height:80%;
+    width:30%;
+    display:flex;
+    margin:auto;
+    flex-direction:column;
+    justify-content:space-around;
+    padding:10em 0;
+    border:3px solid white;
+}
+#zombie{
+    margin:auto;
+    width:100px;
+    height:100px;
+    background-image: url("../img/zombie.png");
+    background-repeat: no-repeat;
+    background-position:0px 0px;
+}
+#buttons{
+    padding: 2em;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+button{
+    margin:1em;
+}
+#timer{
+    padding-top:2.5em;
+    font-size:10em;
+    color:white;
+    text-align:center;
+}
+#start, #restart, #lose, #home{
+    padding:1em;
+    border-radius:1em;
+}
+#restart, #home{
+    display:none;
+}
+#lose{
+    display:none;
+}
+#ball{
+    position:absolute;
+    top:0%;
+    left:0%;
+    width: 40px;
+    height:40px;
+    border-radius:20px;
+    background-color:blue;
+    display:none;
+}
+#canvas{
+    display:none;
+    border:3px solid blue;
+}
